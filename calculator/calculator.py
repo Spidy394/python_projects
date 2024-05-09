@@ -1,60 +1,68 @@
-def addition():
+superscript_num = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+
+def get_one_number():
+    num = int(input("Enter a number: "))
+    return num
+
+def get_two_numbers():
     num1 = int(input(("Enter first number: ")))
     num2 = int(input(("Enter second number: ")))
+    return num1, num2
+
+def addition():
+    num1, num2 = get_two_numbers()
     result = num1 + num2
-    print(result)
+    print(f"{num1} + {num2} = {result}")
 
 def subtraction():
-    num1 = int(input(("Enter first number: ")))
-    num2 = int(input(("Enter second number: ")))
+    num1, num2 = get_two_numbers()
     result = num1 - num2
-    print(result)
+    print(f"{num1} - {num2} = {result}")
 
 def multiplication():
-    num1 = int(input(("Enter first number: ")))
-    num2 = int(input(("Enter second number: ")))
+    num1, num2 = get_two_numbers()
     result = num1 * num2
-    print(result)
+    print(f"{num1} × {num2} = {result}")
 
 def division():
-    num1 = int(input(("Enter first number: ")))
-    num2 = int(input(("Enter second number: ")))
+    num1, num2 = get_two_numbers()
     result = num1 / num2
-    print(result)
+    print(f"{num1} ÷ {num2} = {result}")
 
 def square():
-    num = int(input("Enter number: "))
+    num = get_one_number()
     result = num ** 2
-    print(result)
+    print(f"{num}² = {result}")
 
 def exponent():
     base = int(input("Enter base: "))
     power = int(input("Enter power: "))
     result = base ** power
-    print(result)
+    print(f"{base}{str(power).translate(superscript_num)} = {result}")
 
 def square_root():
-    num = int(input("Enter a number: "))
+    num = get_one_number()
     if num < 0:
         print("Square root of negative number is not real")
     elif num == 0:
         print(0)
     x = num
-    y = (x + 1 ) // 2
+    y = (x + 1 ) / 2
     while y < x:
         x = y
-        y = (x + num // x) // 2
-    print(x)
+        y = (x + num / x) / 2
+    print(f"√({num}) = {x}")
 
 def factorial():
-    num = int(input("Enter a number: "))
+    num = get_one_number()
+    original_num = num
     factorial = 1
 
     while num > 0:
         factorial *= num
         num -= 1
 
-    print(factorial)
+    print(f"{original_num}! = {factorial}")
     
 
 def main():
