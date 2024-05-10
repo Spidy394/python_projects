@@ -8,7 +8,7 @@ This Python program allows users to manage a list of YouTube videos. Users can a
 - ➕ Add a new YouTube video
 - ✏️ Update details of an existing video
 - ❌ Delete a video
-- 💾 Save data to a JSON file (`youtube.txt`)
+- 💾 Save data to a file (`youtube.txt`) in JSON format
 
 ## Usage 🛠️
 
@@ -34,9 +34,9 @@ This Python program allows users to manage a list of YouTube videos. Users can a
 
 1. **Exit the app:** Terminates the program.
 
-## JSON File 📄
+## FILE 📄
 
-The program uses a JSON file (`youtube.txt`) to store the list of videos. If the file does not exist, it will be created automatically. Each video is stored as a dictionary with keys for name, time, and link.
+The program uses a file (`youtube.txt`) to store the list of videos in JSON format. If the file does not exist, it will be created automatically. Each video is stored as a dictionary with keys for name, time, and link.
 
 Example JSON format:
 
