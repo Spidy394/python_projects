@@ -16,12 +16,10 @@ def save_data_helper(videos):
         json.dump(videos, file)
 
 def list_all_videos(videos):
-    print("\n")
-    print("*" * 70)
+    print("\n" + "*" * 70)
     for index, video in enumerate(videos, start=1):
         print(f"{index}. {video['name']}, Duration: {video['time']}, Link: {video['link']}")
-    print("\n")
-    print("*" * 70)
+    print("\n" + "*" * 70)
 
 def add_video(videos):
     name = input("Enter video name: ")
@@ -29,7 +27,7 @@ def add_video(videos):
     link = input("Enter link: ")
     videos.append({'name': name, 'time': time, 'link': link})
     save_data_helper(videos)
-    print("video saved")
+    print("Video saved!")
 
 def update_video(videos):
     list_all_videos(videos)
@@ -42,7 +40,7 @@ def update_video(videos):
         save_data_helper(videos)
         print("Video updated!")
     else:
-        print("Invalid index selected")
+        print("Invalid index selected!!")
 
 def delete_video(videos):
     list_all_videos(videos)
@@ -52,7 +50,7 @@ def delete_video(videos):
         save_data_helper(videos)
         print("Video deleted!")
     else:
-        print("Invalid video index selected: ")
+        print("Invalid video index selected!!")
 
 def main():
     videos = load_data()
@@ -70,10 +68,38 @@ def main():
                 list_all_videos(videos)
             case '2':
                 add_video(videos)
+                while True:
+                    repeat = input("Do you want to add another video(y/n): ")
+                    if repeat.lower() == 'y':
+                        add_video(videos)
+                    elif repeat.lower() == 'n':
+                        break
+                    else:
+                        print("Invalid choice!")
             case '3':
                 update_video(videos)
+                while True:
+                    repeat = input("Do you want to update another video(y/n): ")
+                    if repeat.lower() == 'y':
+                        update_video(videos)
+                    elif repeat.lower() == 'n':
+                        break
+                    else:
+                        print("Invalid choice!")
             case '4':
                 delete_video(videos)
+                while True:
+                    if videos != []:
+                        repeat = input("Do you want to delete another video(y/n): ")
+                        if repeat.lower() == 'y':
+                            delete_video(videos)
+                        elif repeat.lower() == 'n':
+                            break
+                        else:
+                            print("Invalid choice!")
+                    else:
+                        print("No videos to delete!")
+                        break
             case '5':
                 print("Thank you, Have a nice day!")
                 break
