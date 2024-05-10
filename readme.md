@@ -14,6 +14,6 @@ Welcome to my Python Projects repository! Here, you'll find a collection of proj
 
 
 
-Feel free to explore the projects and provide feedback. Contributions and suggestions are welcome! 🙌
+ℹ Feel free to explore the projects and provide feedback. Contributions and suggestions are welcome! 🙌
 
 ---
