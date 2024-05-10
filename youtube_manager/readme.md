@@ -45,12 +45,12 @@ Example JSON format:
     {
         "name": "Video 1",
         "time": "10:30",
-        "link": "https://www.youtube.com/watch?v=video1"
+        "link": "https://youtu.be/BBJa32lCaaY?si=3R9CjMHQV676YKNf"
     },
     {
         "name": "Video 2",
         "time": "05:45",
-        "link": "https://www.youtube.com/watch?v=video2"
+        "link": "https://youtu.be/BBJa32lCaaY?si=3R9CjMHQV676YKNf"
     }
 ]
 ```
@@ -126,7 +126,7 @@ Enter your choice: 2
 
 Enter video name: My Video
 Enter duration: 10:00
-Enter link: https://www.youtube.com/watch?v=abc123
+Enter link: https://youtu.be/BBJa32lCaaY?si=3R9CjMHQV676YKNf
 Video added!
 Do you want to add another video(y/n): n
 
@@ -137,7 +137,7 @@ Do you want to add another video(y/n): n
 5. Exit app
 Enter your choice: 1
 
-(1, 'My Video', '10:00', 'https://www.youtube.com/watch?v=abc123')
+(1, 'My Video', '10:00', 'https://youtu.be/BBJa32lCaaY?si=3R9CjMHQV676YKNf')
 
 1. List videos
 2. Add video
