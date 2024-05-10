@@ -42,16 +42,7 @@ def exponent():
 
 def square_root():
     num = get_one_number()
-    if num < 0:
-        print("Square root of negative number is not real")
-    elif num == 0:
-        print(0)
-    x = num
-    y = (x + 1 ) / 2
-    while y < x:
-        x = y
-        y = (x + num / x) / 2
-    print(f"√({num}) = {x}")
+    print(f"√({num}) = {num ** (0.5)}")
 
 def factorial():
     num = get_one_number()
@@ -100,6 +91,7 @@ def main():
                 factorial()
             case '9':
                 print("Thank you, have a great day!")
+                break
             case _:
                 print("Invalid Choice!!")
         print("*" * 70)

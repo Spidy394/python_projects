@@ -47,7 +47,7 @@ This Python program provides a simple command-line calculator with various mathe
 
 - For the exponent operation, the power is displayed as a superscript for better readability.
 
-- The square root is calculated using the Babylonian method.
+- The square root is calculated by raising *(1/2)* or *(0.5)* in power of the number.
 
 - Factorial calculations are performed using a simple iterative method.
 
