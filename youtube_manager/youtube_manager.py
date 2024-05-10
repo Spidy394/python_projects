@@ -79,13 +79,17 @@ def main():
             case '3':
                 update_video(videos)
                 while True:
-                    repeat = input("Do you want to update another video(y/n): ")
-                    if repeat.lower() == 'y':
-                        update_video(videos)
-                    elif repeat.lower() == 'n':
-                        break
+                    if videos != []:
+                        repeat = input("Do you want to update another video(y/n): ")
+                        if repeat.lower() == 'y':
+                            update_video(videos)
+                        elif repeat.lower() == 'n':
+                            break
+                        else:
+                            print("Invalid choice!")
                     else:
-                        print("Invalid choice!")
+                        print("No videos to update!")
+                        break
             case '4':
                 delete_video(videos)
                 while True:

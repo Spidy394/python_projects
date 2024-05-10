@@ -56,3 +56,97 @@ Example JSON format:
 ```
 
 ---
+
+# 📌 YouTube Video Manager 🎥 with SQLITE3 🗂️
+
+This Python program is a YouTube video manager app that uses SQLite3 to store video details. Users can list, add, update, and delete videos using a command-line interface.
+
+## Features 🚀
+
+- 📋 List all YouTube videos
+
+- ➕ Add a new YouTube video
+
+- ✏️ Update details of an existing video
+
+- ❌ Delete a video
+
+- 💾 Save data to a SQLite database (`youtube_videos.db`)
+
+## Setup ⚙️
+
+1. Ensure you have Python 3 installed.
+
+1. Clone the repository or download the `youtube_manager_with_db.py` file.
+
+## Usage ℹ️
+
+1. Run the program using Python 3:
+
+    ```bash
+        python youtube_manager.py
+    ```
+
+1. Choose from the menu options to manage your YouTube videos.
+
+## Menu Options 📑
+
+1. **List videos:** Displays a list of all stored videos with their names, durations, and links.
+
+1. **Add video:** Allows the user to input details for a new video and adds it to the list.
+
+1. **Update video:** Prompts the user to select a video to update and enter new details.
+
+1. **Delete video:** Lets the user choose a video to delete from the list.
+
+1. **Exit app:** Terminates the program.
+
+## Database Schema 🗃️
+
+The program uses a SQLite database (`youtube_videos.db`) to store the list of videos. The videos table schema is as follows:
+
+- `id` INTEGER PRIMARY KEY
+
+- `name` TEXT NOT NULL
+
+- `time` TEXT NOT NULL
+
+- `link` TEXT NOT NULL
+
+## Sample Run 📝
+
+```
+YouTube manager app with SQLITE3
+1. List videos
+2. Add video
+3. Update video
+4. Delete video
+5. Exit app
+Enter your choice: 2
+
+Enter video name: My Video
+Enter duration: 10:00
+Enter link: https://www.youtube.com/watch?v=abc123
+Video added!
+Do you want to add another video(y/n): n
+
+1. List videos
+2. Add video
+3. Update video
+4. Delete video
+5. Exit app
+Enter your choice: 1
+
+(1, 'My Video', '10:00', 'https://www.youtube.com/watch?v=abc123')
+
+1. List videos
+2. Add video
+3. Update video
+4. Delete video
+5. Exit app
+Enter your choice: 5
+
+Thank you, have a great day!
+```
+
+---
