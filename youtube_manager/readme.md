@@ -1,6 +1,6 @@
 # 📌 YouTube Video Manager 🎥
 
-This Python program allows users to manage a list of YouTube videos. Users can add, update, delete, and list all videos stored in a JSON file. The program provides a simple command-line interface for interacting with the video manager.
+This Python program allows users to manage a list of YouTube videos. Users can add, update, delete, and list all videos stored in a file as JSON format. The program provides a simple command-line interface for interacting with the video manager.
 
 ## Features 🚀
 
