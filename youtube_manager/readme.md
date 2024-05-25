@@ -150,3 +150,99 @@ Thank you, have a great day!
 ```
 
 ---
+
+# 📌 YouTube Video Manager 🎥 with MongoDB 🗂️
+
+This Python program is a YouTube video manager app that uses MongoDB to store video details. Users can list, add, update, and delete videos using a command-line interface.
+
+## Features 🚀
+
+- 📋 List all YouTube videos
+
+- ➕ Add a new YouTube video
+
+- ✏️ Update details of an existing video
+
+- ❌ Delete a video
+
+- 💾 Save data to a MongoDB database
+
+## Setup ⚙️
+
+1. Ensure you have Python 3 installed.
+
+1. Install the required library:
+
+        pip install pymongo
+
+1. Clone the repository or download the `youtube_manager_with_db.py` file.
+
+## Usage ℹ️
+
+1. Run the program using Python 3:
+
+        python youtube_manager.py
+
+1. Choose from the menu options to manage your YouTube videos.
+
+## Menu Options 📑
+
+1. **List videos:** Displays a list of all stored videos with their names, durations, and links.
+
+1. **Add video:** Allows the user to input details for a new video and adds it to the list.
+
+1. **Update video:** Prompts the user to select a video to update and enter new details.
+
+1. **Delete video:** Lets the user choose a video to delete from the list.
+
+1. **Exit app:** Terminates the program.
+
+## Database Schema 🗃️
+
+The program uses a MongoDB database (`ytmanager`) to store the list of videos. The videos collection schema is as follows:
+
+- `_id` ObjectId
+
+- `name` TEXT NOT NULL
+
+- `time` TEXT NOT NULL
+
+- `link` TEXT NOT NULL
+
+## Sample Run 📝
+
+    YouTube Manager App with MongoDB 
+    1. List videos
+    2. Add videos
+    3. Update videos
+    4. Delete videos
+    5. Exit app
+    Enter your choice: 2
+
+    Enter video name: My Video
+    Enter duration: 10:00
+    Enter link: https://youtu.be/BBJa32lCaaY?si=3R9CjMHQV676YKNf
+    Video added!
+    Repeat? (y/n): n
+
+    YouTube Manager App with MongoDB
+    1. List videos
+    2. Add videos
+    3. Update videos
+    4. Delete videos
+    5. Exit app
+    Enter your choice: 1
+
+    Id: 60d...1b, Name: My Video, Time: 10:00, Link: https://youtu.be/BBJa32lCaaY?si=3R9CjMHQV676YKNf
+
+    YouTube Manager App with MongoDB
+    1. List videos
+    2. Add videos
+    3. Update videos
+    4. Delete videos
+    5. Exit app
+    Enter your choice: 5
+
+    Thank You!!
+
+---
