@@ -45,6 +45,4 @@ Username: john_doe
 Country: Wonderland
 ```
 
-### ℹ Feel free to explore and suggest modification to the script as you like! 🙌
-
 ---

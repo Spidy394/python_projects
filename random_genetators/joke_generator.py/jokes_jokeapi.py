@@ -23,7 +23,7 @@ def main():
         try:
             fetch_random_joke()
             repeat = input("Want another joke? (y/n): ")
-            if repeat.lower() != 'y':
+            if repeat.lower() == 'n':
                 print("Thank you! Have a great day!")
                 break
         except Exception as e:

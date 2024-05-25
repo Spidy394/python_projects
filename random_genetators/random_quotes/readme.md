@@ -39,7 +39,7 @@ This function manages the flow of the program, allowing the user to fetch multip
 1. Run the Script:
 
 	```bash
-	python your_script.py
+	python quotes_generator.py
 	```
 
 ## Example Output 🎉

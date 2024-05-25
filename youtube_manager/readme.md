@@ -84,7 +84,7 @@ This Python program is a YouTube video manager app that uses SQLite3 to store vi
 1. Run the program using Python 3:
 
     ```bash
-        python youtube_manager.py
+        python youtube_manage_with_db.py
     ```
 
 1. Choose from the menu options to manage your YouTube videos.
@@ -175,13 +175,13 @@ This Python program is a YouTube video manager app that uses MongoDB to store vi
 
         pip install pymongo
 
-1. Clone the repository or download the `youtube_manager_with_db.py` file.
+1. Clone the repository or download the `youtube_manager_with_mongodb.py` file.
 
 ## Usage ℹ️
 
 1. Run the program using Python 3:
 
-        python youtube_manager.py
+        python youtube_manager_with_mongodb.py
 
 1. Choose from the menu options to manage your YouTube videos.
 

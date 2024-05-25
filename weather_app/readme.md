@@ -40,7 +40,7 @@ This function manages the flow of the program, prompting the user to enter a cit
 
 1. Run the Script:
 
-        python your_script.py
+        python weather.py
 
 
 1. Enter the City:
@@ -49,7 +49,7 @@ This function manages the flow of the program, prompting the user to enter a cit
 
 ## Example Output 🎉
 
-```mathematica
+```
 Enter city: London
 The current temp in London is: 15 ⁰C
 ```
@@ -61,7 +61,5 @@ The current temp in London is: 15 ⁰C
 - Displays the current temperature in the specified city.
 
 - Handles exceptions gracefully.
-
-### ℹ if you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
 ---
