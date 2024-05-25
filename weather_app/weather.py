@@ -1,12 +1,10 @@
 import requests
-import os
-from dotenv import load_dotenv
 
+api_key = 'enter your api key'
 city = input("Enter city: ")
+url = f"https://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
 
 def fetch_weather():
-    load_dotenv()
-    url = f"https://api.weatherapi.com/v1/current.json?key={os.getenv('api_key')}&q={city}"
     response = requests.get(url)
     data = response.json()
 
