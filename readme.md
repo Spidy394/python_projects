@@ -28,6 +28,12 @@ Welcome to my Python Projects repository! Here, you'll find a collection of proj
 
 1. **Weather App 🌦️:** This Python script fetches and displays the current temperature of a city using the `WeatherAPI`. It prompts the user to enter a city name and provides the temperature in Celsius. Make sure to replace 'enter your api key' with your actual WeatherAPI key in the script.  
 
+1. **QR Code Generator 📱:** This Python script generates a QR code from user provided link. It uses the `qrcode` library to create the QR code and displays it. The program provides a simple command-line interface for user interaction.
+
+1. Games 🎮:
+
+    - **Rock-Paper-Scissors Game ✊✋✌:** This Python script allows you to play the classic Rock-Paper-Scissors game against the computer. The program provides a simple command-line interface where you can choose your move and see the computer's move. The game continues until you choose to stop.
+
 ℹ Feel free to explore the projects and provide feedback. Suggestions are welcome! 🙌
 
 ---
