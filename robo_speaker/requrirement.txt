@@ -1,0 +1,7 @@
+Package   Version
+--------- -------
+comtypes  1.4.4
+pip       24.0
+pypiwin32 223
+pyttsx3   2.90
+pywin32   306
