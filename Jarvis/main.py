@@ -1,8 +1,7 @@
-import speech_recognition as sr
 import webbrowser
+import speech_recognition as sr 
 import pyttsx3
 
-recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
 def speak(text):
@@ -10,20 +9,16 @@ def speak(text):
     engine.runAndWait()
 
 if __name__ == "__main__":
-    speak("Initializing Jarvis")
-    # trigger word will be Jarvis
+    speak("Initializing Jarvis!")
     while True:
         r = sr.Recognizer()
         with sr.Microphone() as source:
             print("Listening...")
+            # r.adjust_for_ambient_noise(source, duration=1)
             audio = r.listen(source)
 
-        print("Recognizing...")
         try:
             command = r.recognize_google(audio)
             print(command)
         except sr.UnknownValueError:
-            print("Can't understand")
-        except sr.RequestError as e:
-            print(f"Error! {e}")
-        
+            print("could not understand audio")
